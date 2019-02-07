@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_jquery jquery='full' %}
+</head>
+<body>
+<div class="list-group">
+    <a class="list-group-item list-group-item-action" href="{%  url 'admin:index' %}">Admin</a>
+    <a class="list-group-item list-group-item-action" href="{% url 'courses:index'%} ">Courses</a>
+</div>
+</body>
+</html>
